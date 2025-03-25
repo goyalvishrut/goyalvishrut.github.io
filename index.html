@@ -10,7 +10,7 @@
       name="description"
     />
     <meta
-      content="software developer, android, kotlin, python,backend, data analyst"
+      content="software developer, android, kotlin, python, backend, data analyst"
       name="keywords"
     />
 
@@ -42,6 +42,295 @@
     <link href="static/assets/css/style.css" rel="stylesheet" />
 
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+    <!-- Add custom styles -->
+    <style>
+      /* Modern gradient background for hero section */
+      #hero {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>')
+          no-repeat bottom;
+        background-size: cover;
+        opacity: 0.1;
+      }
+
+      /* Enhanced profile section */
+      .profile {
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile img {
+        border: 5px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .profile img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Modern card design for sections */
+      .section-bg {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Enhanced navigation */
+      .nav-menu {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 1rem;
+      }
+
+      .nav-menu a {
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        margin: 0.5rem 0;
+      }
+
+      .nav-menu a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(5px);
+      }
+
+      /* Modern project cards */
+      .resume-item {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .resume-item:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Enhanced skills section */
+      .skills-content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills-content li {
+        background: white;
+        padding: 0.8rem 1.2rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .skills-content li:hover {
+        transform: translateX(5px);
+      }
+
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .profile {
+          padding: 1rem;
+        }
+
+        .section-bg {
+          padding: 1rem;
+          margin: 1rem 0;
+        }
+
+        .resume-item {
+          padding: 1rem;
+        }
+
+        .nav-menu {
+          padding: 0.5rem;
+        }
+
+        .hero-container h1 {
+          font-size: 2rem;
+        }
+
+        .hero-container p {
+          font-size: 1.2rem;
+        }
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Enhanced back to top button */
+      .back-to-top {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Modern section titles */
+      .section-title h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #1e3c72, #2a5298);
+        border-radius: 3px;
+      }
+
+      /* Enhanced About Section Styles */
+      .about-content {
+        padding: 2rem;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #f0f0f0;
+      }
+
+      .about-avatar {
+        width: 150px;
+        height: 150px;
+        margin-right: 2rem;
+        position: relative;
+      }
+
+      .about-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .about-avatar img:hover {
+        transform: scale(1.05);
+      }
+
+      .about-title h3 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #1e3c72;
+      }
+
+      .about-title .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 0;
+      }
+
+      .about-text {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .about-card {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .about-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+      }
+
+      .card-icon i {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .card-content h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #1e3c72;
+      }
+
+      .card-content p {
+        margin-bottom: 0;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .about-header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .about-avatar {
+          margin-right: 0;
+          margin-bottom: 1.5rem;
+        }
+
+        .about-title h3 {
+          font-size: 2rem;
+        }
+
+        .about-text {
+          grid-template-columns: 1fr;
+        }
+
+        .about-content {
+          padding: 1rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -157,29 +446,74 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <h4>
-                <p><b>Hey there!</b></p>
-                <p>
-                  My name is Vishrut Goyal. I'm a passionate software
-                  development professional focused on creating impactful
-                  solutions through innovation and problem-solving.
-                </p>
-                <p>
-                  I specialize in Android and backend development, combining
-                  technical expertise with creative thinking to build
-                  user-focused applications that deliver exceptional results.
-                </p>
-                <p>
-                  My experience includes designing scalable systems and staying
-                  current with emerging technologies. I thrive in collaborative
-                  environments, working with teams to solve complex challenges.
-                </p>
-                <p>
-                  I'm always open to connecting with fellow professionals,
-                  exploring new opportunities, and sharing ideas. Let's connect
-                  and build something great together!
-                </p>
-              </h4>
+              <div class="about-content">
+                <div class="about-header">
+                  <div class="about-avatar">
+                    <img src="static/assets/img/profile-img.jpg" alt="Vishrut Goyal" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="about-title">
+                    <h3>Vishrut Goyal</h3>
+                    <p class="subtitle">Software Development Engineer II @ Upstox</p>
+                  </div>
+                </div>
+                <div class="about-text">
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i class="bx bx-code-alt"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Professional Journey</h4>
+                      <p>
+                        I'm a passionate software development professional with expertise in Android and backend development. 
+                        Currently working as an SDE-II at Upstox, I focus on creating impactful solutions through innovation 
+                        and problem-solving.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i class="bx bx-bulb"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Expertise</h4>
+                      <p>
+                        My technical expertise spans across mobile development, backend systems, and data analysis. 
+                        I specialize in building scalable, user-focused applications that deliver exceptional results 
+                        while maintaining high performance and reliability.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i class="bx bx-group"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Collaboration</h4>
+                      <p>
+                        I thrive in collaborative environments, working with cross-functional teams to solve complex 
+                        challenges. My experience includes leading development initiatives and mentoring team members 
+                        while maintaining high code quality standards.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i class="bx bx-rocket"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Innovation</h4>
+                      <p>
+                        I'm passionate about staying current with emerging technologies and implementing innovative 
+                        solutions. I'm always open to connecting with fellow professionals, exploring new opportunities, 
+                        and sharing ideas to build something great together!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
