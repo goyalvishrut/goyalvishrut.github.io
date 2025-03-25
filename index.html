@@ -211,7 +211,7 @@
         border-radius: 3px;
       }
 
-      /* Enhanced About Section Styles */
+      /* Updated About Section Styles */
       .about-content {
         padding: 2rem;
         background: white;
@@ -219,49 +219,9 @@
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
 
-      .about-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem;
-        padding-bottom: 2rem;
-        border-bottom: 2px solid #f0f0f0;
-      }
-
-      .about-avatar {
-        width: 150px;
-        height: 150px;
-        margin-right: 2rem;
-        position: relative;
-      }
-
-      .about-avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 5px solid #fff;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-      }
-
-      .about-avatar img:hover {
-        transform: scale(1.05);
-      }
-
-      .about-title h3 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        color: #1e3c72;
-      }
-
-      .about-title .subtitle {
-        font-size: 1.2rem;
-        color: #666;
-        margin-bottom: 0;
-      }
-
       .about-text {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
       }
 
@@ -272,6 +232,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         align-items: flex-start;
+        height: 100%;
       }
 
       .about-card:hover {
@@ -288,6 +249,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 1.5rem;
+        flex-shrink: 0;
       }
 
       .card-icon i {
@@ -295,39 +257,54 @@
         color: white;
       }
 
+      .card-content {
+        flex-grow: 1;
+      }
+
       .card-content h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
         color: #1e3c72;
       }
 
       .card-content p {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
         color: #666;
         line-height: 1.6;
       }
 
+      .expertise-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .expertise-list li {
+        color: #666;
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li::before {
+        content: "•";
+        color: #1e3c72;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
       @media (max-width: 768px) {
-        .about-header {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .about-avatar {
-          margin-right: 0;
-          margin-bottom: 1.5rem;
-        }
-
-        .about-title h3 {
-          font-size: 2rem;
+        .about-content {
+          padding: 1rem;
         }
 
         .about-text {
           grid-template-columns: 1fr;
         }
 
-        .about-content {
-          padding: 1rem;
+        .about-card {
+          padding: 1.5rem;
         }
       }
     </style>
@@ -447,26 +424,20 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="about-content">
-                <div class="about-header">
-                  <div class="about-avatar">
-                    <img src="static/assets/img/profile-img.jpg" alt="Vishrut Goyal" class="img-fluid rounded-circle">
-                  </div>
-                  <div class="about-title">
-                    <h3>Vishrut Goyal</h3>
-                    <p class="subtitle">Software Development Engineer II @ Upstox</p>
-                  </div>
-                </div>
                 <div class="about-text">
                   <div class="about-card">
                     <div class="card-icon">
                       <i class="bx bx-code-alt"></i>
                     </div>
                     <div class="card-content">
-                      <h4>Professional Journey</h4>
+                      <h4>Professional Overview</h4>
                       <p>
-                        I'm a passionate software development professional with expertise in Android and backend development. 
-                        Currently working as an SDE-II at Upstox, I focus on creating impactful solutions through innovation 
-                        and problem-solving.
+                        I'm a Software Development Engineer II at Upstox,
+                        specializing in Android and backend development. With a
+                        strong foundation in building scalable systems and a
+                        passion for creating user-centric applications, I focus
+                        on delivering high-performance solutions that drive
+                        business impact.
                       </p>
                     </div>
                   </div>
@@ -476,26 +447,27 @@
                       <i class="bx bx-bulb"></i>
                     </div>
                     <div class="card-content">
-                      <h4>Expertise</h4>
+                      <h4>Technical Expertise</h4>
                       <p>
-                        My technical expertise spans across mobile development, backend systems, and data analysis. 
-                        I specialize in building scalable, user-focused applications that deliver exceptional results 
-                        while maintaining high performance and reliability.
+                        My expertise spans across mobile development, backend
+                        systems, and data analysis. I excel in:
                       </p>
-                    </div>
-                  </div>
-
-                  <div class="about-card">
-                    <div class="card-icon">
-                      <i class="bx bx-group"></i>
-                    </div>
-                    <div class="card-content">
-                      <h4>Collaboration</h4>
-                      <p>
-                        I thrive in collaborative environments, working with cross-functional teams to solve complex 
-                        challenges. My experience includes leading development initiatives and mentoring team members 
-                        while maintaining high code quality standards.
-                      </p>
+                      <ul class="expertise-list">
+                        <li>
+                          Building scalable Android applications with modern
+                          architecture
+                        </li>
+                        <li>Developing high-performance backend systems</li>
+                        <li>
+                          Implementing real-time data processing solutions
+                        </li>
+                        <li>
+                          Creating responsive and intuitive user interfaces
+                        </li>
+                        <li>
+                          Optimizing application performance and reliability
+                        </li>
+                      </ul>
                     </div>
                   </div>
 
@@ -504,12 +476,22 @@
                       <i class="bx bx-rocket"></i>
                     </div>
                     <div class="card-content">
-                      <h4>Innovation</h4>
+                      <h4>Career Focus</h4>
                       <p>
-                        I'm passionate about staying current with emerging technologies and implementing innovative 
-                        solutions. I'm always open to connecting with fellow professionals, exploring new opportunities, 
-                        and sharing ideas to build something great together!
+                        I'm passionate about leveraging technology to solve
+                        complex problems and create impactful solutions. My
+                        approach combines technical excellence with innovative
+                        thinking, focusing on:
                       </p>
+                      <ul class="expertise-list">
+                        <li>Architecting scalable and maintainable systems</li>
+                        <li>
+                          Leading cross-functional development initiatives
+                        </li>
+                        <li>Mentoring team members and sharing knowledge</li>
+                        <li>Staying current with emerging technologies</li>
+                        <li>Building products that make a difference</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
