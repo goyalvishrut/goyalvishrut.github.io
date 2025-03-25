@@ -66,22 +66,119 @@
         opacity: 0.1;
       }
 
-      /* Enhanced profile section */
-      .profile {
+      /* Header and Profile Section */
+      #header {
+        background: #1a1a1a;
         padding: 2rem;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        overflow-y: auto;
+        z-index: 999;
+        transition: all 0.3s;
+      }
+
+      .profile {
+        text-align: center;
+        padding: 1rem 0;
       }
 
       .profile img {
-        border: 5px solid rgba(255, 255, 255, 0.2);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #2a2a2a;
+        margin-bottom: 1rem;
         transition: transform 0.3s ease;
       }
 
       .profile img:hover {
         transform: scale(1.05);
+      }
+
+      .profile h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+
+      .social-links {
+        margin: 1.5rem 0;
+      }
+
+      .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: #2a2a2a;
+        border-radius: 50%;
+        margin: 0 0.3rem;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background: #3a3a3a;
+        transform: translateY(-3px);
+      }
+
+      .nav-menu {
+        padding: 1rem 0;
+      }
+
+      .nav-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-menu a {
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        margin: 0.3rem 0;
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a.active {
+        background: #2a2a2a;
+        color: #fff;
+      }
+
+      .nav-menu i {
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+      }
+
+      @media (max-width: 1199px) {
+        #header {
+          left: -300px;
+        }
+        
+        #header.mobile-nav-active {
+          left: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #header {
+          width: 100%;
+          padding: 1rem;
+        }
+        
+        .profile img {
+          width: 120px;
+          height: 120px;
+        }
       }
 
       /* Modern card design for sections */
@@ -95,21 +192,50 @@
 
       /* Enhanced navigation */
       .nav-menu {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding: 1rem;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        padding: 0.8rem;
+        margin-top: 1.5rem;
       }
 
       .nav-menu a {
         transition: all 0.3s ease;
-        border-radius: 5px;
-        margin: 0.5rem 0;
+        border-radius: 6px;
+        margin: 0.4rem 0;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
       }
 
       .nav-menu a:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.12);
         transform: translateX(5px);
+      }
+
+      .nav-menu i {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+      }
+
+      .social-links {
+        margin-top: 1.2rem;
+      }
+
+      .social-links a {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.08);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0.3rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-3px);
       }
 
       /* Modern project cards */
