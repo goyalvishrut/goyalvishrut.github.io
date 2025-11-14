@@ -997,3 +997,87 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Custom Enhancements
+--------------------------------------------------------------*/
+/* About section improvements */
+#about p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #444;
+}
+
+#about p:first-child {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#about p b {
+  color: #149ddd;
+  font-size: 20px;
+}
+
+/* Experience and Education section improvements */
+.resume .resume-item {
+  padding: 20px;
+  border-left: 3px solid #149ddd;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.resume .resume-item:hover {
+  box-shadow: 0 0 20px rgba(20, 157, 221, 0.15);
+  transform: translateX(5px);
+}
+
+.resume .resume-item h4 {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* Projects section improvements */
+.portfolio .portfolio-item {
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills section improvements */
+.skills .progress {
+  height: 65px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Section title improvements */
+.section-title h2 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+/* Smooth text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
