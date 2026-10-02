@@ -97,7 +97,9 @@ test("public-only preview routes and HTTP behavior", async () => {
     for (const path of [
       "css/portfolio.css",
       "css/resume.css",
+      "css/theme.css",
       "js/portfolio.js",
+      "js/theme.js",
       "img/monogram.svg",
       "img/profile-img.jpg",
     ]) {

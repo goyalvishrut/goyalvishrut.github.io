@@ -9,6 +9,14 @@ const assets = new Map([
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/resume.html", ["resume.html", "text/html; charset=utf-8"]],
   [
+    "/static/assets/css/theme.css",
+    ["static/assets/css/theme.css", "text/css; charset=utf-8"],
+  ],
+  [
+    "/static/assets/js/theme.js",
+    ["static/assets/js/theme.js", "text/javascript; charset=utf-8"],
+  ],
+  [
     "/static/assets/css/portfolio.css",
     ["static/assets/css/portfolio.css", "text/css; charset=utf-8"],
   ],

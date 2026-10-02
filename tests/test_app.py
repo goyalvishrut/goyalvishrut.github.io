@@ -23,7 +23,7 @@ class PortfolioRoutesTest(unittest.TestCase):
         with self.client.get("/resume.html") as response:
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.data, (self.root / "resume.html").read_bytes())
-        for path in ("css/portfolio.css", "css/resume.css", "js/portfolio.js", "img/monogram.svg", "img/profile-img.jpg"):
+        for path in ("css/portfolio.css", "css/resume.css", "css/theme.css", "js/portfolio.js", "js/theme.js", "img/monogram.svg", "img/profile-img.jpg"):
             with self.subTest(path=path):
                 with self.client.get(f"/static/assets/{path}") as response:
                     self.assertEqual(response.status_code, 200)

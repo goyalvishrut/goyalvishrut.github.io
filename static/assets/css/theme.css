@@ -1,0 +1,241 @@
+/* The theme control stays outside the collapsible mobile navigation. */
+:root {
+  color-scheme: light;
+}
+.theme-toggle {
+  display: inline-flex;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.theme-toggle:hover {
+  background: var(--soft);
+  border-color: var(--green);
+}
+.theme-sun {
+  display: none;
+}
+[data-theme="dark"] .theme-moon {
+  display: none;
+}
+[data-theme="dark"] .theme-sun {
+  display: block;
+}
+.resume-toolbar {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Screen-only tokens keep printed resumes light, regardless of the selection. */
+@media screen {
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #151c18;
+    --ink: #e9e9de;
+    --muted: #adb8ad;
+    --green: #b8cd9f;
+    --line: #38463c;
+    --soft: #26362b;
+    --header-surface: rgba(21, 28, 24, 0.96);
+    --hero-surface: #1d2b22;
+    --hero-border: #364839;
+    --diagram-top: #435941;
+    --diagram-top-edge: #324632;
+    --diagram-middle: #314b39;
+    --diagram-middle-edge: #263e2e;
+    --diagram-bottom: #182e22;
+    --diagram-bottom-edge: #112318;
+    --diagram-line: #8ba480;
+    --diagram-highlight: #bfd5a6;
+    --diagram-label: #c4d4b9;
+    --feedback-surface: #27382a;
+    --node-surface: #1c2c20;
+    --node-border: #819675;
+    --mobile-surface: #382d29;
+    --mobile-ink: #dfbca6;
+    --lifecycle-surface: #26333a;
+    --lifecycle-ink: #bbd0dc;
+    --lifecycle-line: #91aaba;
+    --signal-surface: #333326;
+    --signal-ink: #d8d5aa;
+    --signal-line: #adae7e;
+    --lab-surface: #332c39;
+    --lab-ink: #d5c2e2;
+    --lab-bracket: #b7a1c7;
+    --experience-surface: #1c281f;
+    --experience-line: #374b39;
+    --timeline-line: #66805d;
+    --badge-surface: #30482f;
+    --badge-ink: #d2e3bc;
+    --about-surface: #20271f;
+    --portrait-surface: #2b3428;
+    --portrait-border: #4a5743;
+    --resume-surface: #1d2720;
+    --selection-surface: #4a6340;
+    --selection-ink: #f4f3e7;
+  }
+  ::selection {
+    background: var(--selection-surface, #ccdac2);
+    color: var(--selection-ink, #162b20);
+  }
+  .site-header {
+    background: var(--header-surface, rgba(246, 245, 239, 0.96));
+  }
+  .skip-link {
+    color: var(--paper);
+  }
+  .hero-art {
+    background: var(--hero-surface, #eaeee3);
+    border-color: var(--hero-border, #dce1d3);
+  }
+  .small-cross {
+    color: var(--diagram-line, #81967b);
+  }
+  .visual-feedback {
+    background: var(--feedback-surface, #e3e9db);
+  }
+  .pipeline-node {
+    background: var(--node-surface, #f2f4e9);
+    border-color: var(--node-border, #9cad93);
+  }
+  .pipeline-node.node-solid {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .visual-mobile {
+    background: var(--mobile-surface, #eee8e1);
+    color: var(--mobile-ink, #67463a);
+  }
+  .visual-lifecycle {
+    background: var(--lifecycle-surface, #e4e8ec);
+    color: var(--lifecycle-ink, #344956);
+  }
+  .lifecycle-art span {
+    border-color: var(--lifecycle-line, #879da9);
+  }
+  .lifecycle-art .lifecycle-last {
+    background: var(--lifecycle-ink, #344956);
+    border-color: var(--lifecycle-ink, #344956);
+    color: var(--lifecycle-surface, #f4f5f6);
+  }
+  .visual-intelligence {
+    background: var(--signal-surface, #e9e5d7);
+    color: var(--signal-ink, #514e38);
+  }
+  .signal-lines span {
+    border-color: var(--signal-line, #7d8060);
+  }
+  .visual-lab {
+    background: var(--lab-surface, #e9e5ec);
+    color: var(--lab-ink, #53435f);
+  }
+  .lab-bracket {
+    color: var(--lab-bracket, #93829c);
+  }
+  .detail-body .delivery-note {
+    background: var(--soft);
+  }
+  .experience-section {
+    background: var(--experience-surface, #edf0e7);
+    border-color: var(--experience-line, #e0e4d7);
+  }
+  .timeline {
+    border-color: var(--timeline-line, #bbc9b4);
+  }
+  .role {
+    border-color: var(--experience-line, #d1dac9);
+  }
+  .role::before {
+    border-color: var(--timeline-line, #8c9f80);
+    background: var(--experience-surface, #edf0e7);
+  }
+  .role-current::before {
+    background: var(--green);
+    border-color: var(--green);
+    box-shadow: 0 0 0 5px var(--badge-surface, #dce5d4);
+  }
+  .current-badge {
+    background: var(--badge-surface, #dce5d4);
+    color: var(--badge-ink, #294332);
+  }
+  .tags span {
+    border-color: var(--experience-line, #c9d3c0);
+  }
+  .role-progression {
+    border-color: var(--experience-line, #c8d2bf);
+  }
+  .about-section {
+    background: var(--about-surface, #ecebe3);
+  }
+  .portrait-wrap {
+    background: var(--portrait-surface, #f1f1e8);
+    border-color: var(--portrait-border, #c6cabe);
+  }
+  .education,
+  .toolkit {
+    border-color: var(--portrait-border, #cdd0c3);
+  }
+  .resume-document {
+    background: var(--resume-surface, #fff);
+  }
+  .resume-contact > span {
+    color: var(--muted);
+  }
+  .resume-project h3 a {
+    text-decoration-color: var(--line);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    column-gap: 10px;
+  }
+  .header-inner .brand {
+    gap: 10px;
+  }
+  .header-inner .monogram {
+    padding-right: 10px;
+  }
+  .menu-toggle {
+    gap: 10px;
+    padding-inline: 9px;
+    font-size: 12px;
+    min-height: 44px;
+  }
+}
+@media (max-width: 360px) {
+  .resume-toolbar .text-link {
+    width: 100%;
+  }
+  .resume-toolbar .theme-toggle {
+    margin-left: 0;
+  }
+  .resume-toolbar [data-print] {
+    margin-left: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle {
+    transition: none;
+  }
+}
+@media print {
+  :root {
+    color-scheme: light;
+  }
+  .theme-toggle {
+    display: none !important;
+  }
+}

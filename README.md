@@ -16,7 +16,8 @@ Open `http://127.0.0.1:4173`. An alternate port can be passed as the first argum
 
 ```sh
 node --check static/assets/js/portfolio.js
-node --test tests/portfolio.test.mjs
+node --check static/assets/js/theme.js
+node --test tests/*.test.mjs
 ```
 
 Also verify desktop and mobile layouts, keyboard navigation, filter buttons, expandable work summaries, reduced motion, and the resume print layout in a browser.
@@ -36,6 +37,7 @@ python3.11 -m venv .venv-portfolio311
 - `static/assets/css/portfolio.css`: design tokens, responsive layouts, and reduced-motion behavior.
 - `static/assets/css/resume.css`: resume screen and A4 print styles.
 - `static/assets/js/portfolio.js`: progressive enhancements for navigation, filters, one-time entrance motion, and printing.
+- `static/assets/css/theme.css` and `static/assets/js/theme.js`: light/dark themes, an accessible toggle on both pages, and a local preference shared between pages. The system theme is used until a choice is saved. Storage failures do not prevent toggling, and print styles always remain light.
 - `app.py`: optional Flask routes for the canonical portfolio and resume. Historical templates and vendor assets are retained but are not loaded by the current site.
 
 No frontend build step, remote fonts, analytics, or external script dependencies are required. Core content and expandable details remain usable without JavaScript.
