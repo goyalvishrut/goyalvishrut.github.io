@@ -1,546 +1,1045 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-  <title>Vishrut Goyal - Software Developer</title>
-  <meta content="A portfolio showcasing the skills and experience of Vishrut Goyal, a Software Developer."
-    name="description" />
-  <meta content="software developer, android, kotlin, python,backend, data analyst" name="keywords" />
-
-  <link href="static/assets/img/favicon.png" rel="icon" />
-
-  <link href="static/assets/fonts/googlefonts.css" rel="stylesheet" />
-
-  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-  <link href="static/assets/css/style.css" rel="stylesheet" />
-
-  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-</head>
-
-<body>
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="static/assets/img/profile-img.jpg" alt="Profile Picture" class="img-fluid rounded-circle" />
-        <h1 class="text-light">Vishrut Goyal</h1>
-        <div class="social-links mt-3 text-center">
-          <a href="mailto:goyalvishrut@gmail.com" class="gmail" target="_blank"><i class="bx bx-envelope"></i></a>
-          <a href="https://github.com/goyalvishrut" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/goyalvishrut/" class="linkedin" target="_blank"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://leetcode.com/u/goyalvishrut/" class="leetcode" target="_blank"><span class="iconify"
-              data-icon="simple-icons:leetcode"></span></a>
-          <a href="https://www.hackerrank.com/goyalvishrut?hr_r=1" class="hackerrank" target="_blank"><span
-              class="iconify" data-icon="cib:hackerrank"></span></a>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Vishrut Goyal is a software engineer at PhonePe, previously Upstox. Building thoughtful mobile experiences, reliable developer platforms, and the systems behind them."
+    />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Vishrut Goyal — Product-minded. Systems-driven."
+    />
+    <meta
+      property="og:description"
+      content="Mobile experiences. Developer platforms. Software that works beautifully, all the way down."
+    />
+    <meta property="og:url" content="https://goyalvishrut.github.io/" />
+    <meta
+      property="og:image"
+      content="https://goyalvishrut.github.io/static/assets/img/profile-img.jpg"
+    />
+    <link rel="canonical" href="https://goyalvishrut.github.io/" />
+    <link
+      rel="icon"
+      href="static/assets/img/monogram.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="static/assets/css/portfolio.css" />
+    <script src="static/assets/js/portfolio.js" defer></script>
+    <title>Vishrut Goyal — Software Engineer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#top" aria-label="Vishrut Goyal, home"
+          ><span class="monogram" aria-hidden="true">vg.</span
+          ><span>Vishrut Goyal</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          hidden
+        >
+          Menu <span aria-hidden="true">+</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#work">Selected work</a><a href="#experience">Experience</a
+          ><a href="#about">About</a><a href="#contact">Contact</a
+          ><a class="nav-resume" href="resume.html"
+            >Resume <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
+    </header>
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>Software engineer
+            · Mobile &amp; platforms
+          </p>
+          <h1 id="hero-title">Product-minded.<br /><em>Systems-driven.</em></h1>
+          <p class="hero-intro">
+            I’m Vishrut. I build the experiences people use<br
+              class="desktop-break"
+            />
+            and the platforms engineers depend on.
+          </p>
+          <p class="hero-context">
+            Currently building developer infrastructure at
+            <strong>PhonePe.</strong><br />Previously, mobile trading
+            experiences at <strong>Upstox.</strong>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            ><a class="text-link" href="resume.html"
+              >View resume <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-heading">
+            <span>AN ENGINEER’S PERSPECTIVE</span><span>FIG. 01</span>
+          </div>
+          <svg class="stack-diagram" viewBox="0 0 440 430" fill="none">
+            <defs>
+              <pattern
+                id="grid"
+                width="22"
+                height="22"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="1" cy="1" r=".8" fill="#9eaaa0" opacity=".4" />
+              </pattern>
+            </defs>
+            <rect width="440" height="430" fill="url(#grid)" />
+            <path
+              d="M220 24V399M29 219H411"
+              stroke="#a3b0a5"
+              stroke-dasharray="3 7"
+              opacity=".6"
+            />
+            <g class="stack-layer layer-bottom">
+              <path
+                d="M220 204 376 291 220 378 64 291Z"
+                fill="#244b3c"
+                stroke="#244b3c"
+              />
+              <path
+                d="M64 291V304L220 391 376 304V291L220 378Z"
+                fill="#173d2e"
+              />
+              <path d="M220 227 334 291 220 355 106 291Z" stroke="#91ac91" />
+              <path
+                d="M169 263 273 321M168 321 271 263"
+                stroke="#91ac91"
+                opacity=".5"
+              />
+              <circle cx="220" cy="291" r="6" fill="#c2d6b3" />
+            </g>
+            <path
+              d="M64 183V291M376 183V291M220 270V378"
+              stroke="#68816f"
+              stroke-dasharray="4 5"
+            />
+            <g class="stack-layer layer-middle">
+              <path
+                d="M220 116 376 203 220 290 64 203Z"
+                fill="#dce3cd"
+                stroke="#81967b"
+              />
+              <path
+                d="M64 203V215L220 302 376 215V203L220 290Z"
+                fill="#b9c8a8"
+                stroke="#81967b"
+              />
+              <path
+                d="m162 203 58-32 58 32-58 32Z"
+                fill="#f6f5ef"
+                stroke="#81967b"
+              />
+              <path
+                d="m120 180 31 17M287 211l31 17M193 248l20-11M228 171l20-11"
+                stroke="#81967b"
+                stroke-width="2"
+              />
+            </g>
+            <path
+              d="M64 115V203M376 115V203M220 202V290"
+              stroke="#68816f"
+              stroke-dasharray="4 5"
+            />
+            <g class="stack-layer layer-top">
+              <path
+                d="M220 28 376 115 220 202 64 115Z"
+                fill="#faf9f3"
+                stroke="#81967b"
+              />
+              <path
+                d="M64 115V127L220 214 376 127V115L220 202Z"
+                fill="#e7e8db"
+                stroke="#81967b"
+              />
+              <path
+                d="m163 115 57-32 57 32-57 32Z"
+                fill="#dce3cd"
+                stroke="#81967b"
+              />
+              <path d="m199 115 21-12 21 12-21 12Z" fill="#244b3c" />
+            </g>
+            <g
+              fill="#244b3c"
+              font-family="monospace"
+              font-size="10"
+              letter-spacing="1"
+            >
+              <text x="296" y="54">EXPERIENCE</text>
+              <text x="301" y="170">PLATFORM</text>
+              <text x="17" y="358">INFRASTRUCTURE</text>
+            </g>
+            <path d="M298 61h-34M301 176h-16M97 344v-24" stroke="#81967b" />
+          </svg>
+          <div class="art-caption">
+            <span class="small-cross">+</span
+            ><span>From the interface to the infrastructure.</span
+            ><span class="small-cross">+</span>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <span>Thoughtful at the surface. Reliable underneath.</span
+          ><a href="#work"
+            >Scroll to discover <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
-          </li>
-          <li>
-            <a href="#education" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Education</span></a>
-          </li>
-          <li>
-            <a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a>
-          </li>
-          <li>
-            <a href="#projects" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Projects</span></a>
-          </li>
-          <li>
-            <a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1YuO2KwhHUIITk9vKdyvqHgpGshGmuzBh/view" target="_blank"
-              class="nav-link scrollto"><i class="bx bx-file-blank"></i>
-              <span>Download Resume</span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Vishrut Goyal</h1>
+      <section
+        class="work-section section shell"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2 id="work-title">
+              Different layers.<br /><em>The same care.</em>
+            </h2>
+          </div>
+          <p class="section-description">
+            From real-time trading interfaces to build systems and developer
+            tooling. A selection of the problems I’ve worked on.
+          </p>
+        </div>
+        <div class="work-toolbar">
+          <div
+            class="work-filters"
+            role="group"
+            aria-label="Filter selected work"
+            hidden
+          >
+            <button type="button" data-filter="all" aria-pressed="true">
+              All work <span>06</span></button
+            ><button type="button" data-filter="platform" aria-pressed="false">
+              Platforms</button
+            ><button type="button" data-filter="mobile" aria-pressed="false">
+              Mobile</button
+            ><button
+              type="button"
+              data-filter="experiments"
+              aria-pressed="false"
+            >
+              Experiments
+            </button>
+          </div>
+          <p
+            class="work-count"
+            id="work-count"
+            role="status"
+            aria-live="polite"
+          >
+            6 selected work areas
+          </p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card" data-category="platform">
+            <div class="work-visual visual-feedback" aria-hidden="true">
+              <div class="visual-meta">
+                <span>01 — DEVELOPER EXPERIENCE</span><span>PHONEPE</span>
+              </div>
+              <div class="pipeline-art">
+                <span class="pipeline-node">Change<span>01</span></span
+                ><i>→</i
+                ><span class="pipeline-node">Validate<span>02</span></span
+                ><i>→</i
+                ><span class="pipeline-node node-solid"
+                  >Feedback<span>03</span></span
+                >
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> A shorter path to useful feedback
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">CI/CD · Test infrastructure</p>
+              <h3>Make the feedback loop work.</h3>
+              <p>
+                Change-aware presubmit checks that bring targeted tests, quality
+                signals, and actionable reports closer to the code change.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <p>
+                    Built and evolved presubmit workflows in shared CI
+                    infrastructure, including affected-module execution, Sonar
+                    integration, merge-request reports, and retry and
+                    cancellation controls.
+                  </p>
+                  <ul>
+                    <li>
+                      Isolated large test workloads into configurable shards,
+                      with a safe full-test fallback when impact analysis is
+                      unavailable.
+                    </li>
+                    <li>
+                      Added execution analytics and improved runner,
+                      environment, and pipeline configuration.
+                    </li>
+                    <li>
+                      Developed reusable quality tooling around SCM-aware
+                      analysis, JaCoCo coverage, and dependency guardrails.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Delivered: merged platform and application integrations.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="work-card" data-category="platform">
+            <div class="work-visual visual-cache" aria-hidden="true">
+              <div class="visual-meta">
+                <span>02 — BUILD ENGINEERING</span><span>PHONEPE</span>
+              </div>
+              <div class="cache-art">
+                <span class="cache-orbit orbit-one"></span
+                ><span class="cache-orbit orbit-two"></span>
+                <div class="cache-core">
+                  Build once.<br /><em>Reuse deliberately.</em>
+                </div>
+                <span class="cache-label">DETERMINISTIC INPUTS</span>
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> Gradle · Caching · Diagnostics
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">Gradle · Kotlin · Performance</p>
+              <h3>Build systems, with less friction.</h3>
+              <p>
+                Cache correctness, configuration-cache compatibility, and
+                reusable Gradle plugins for a more predictable development
+                workflow.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <ul>
+                    <li>
+                      Built a type-safe version-catalog accessor plugin with
+                      multi-catalog support, validation, and cacheable code
+                      generation.
+                    </li>
+                    <li>
+                      Addressed path-sensitive task inputs, annotation-processor
+                      ordering, and configuration serialization issues that
+                      prevented reuse.
+                    </li>
+                    <li>
+                      Implemented configuration-cache persistence and validated
+                      reuse across fresh containers; explored broader
+                      runner-baseline reuse separately.
+                    </li>
+                    <li>
+                      Developed an OOM-detection plugin and used build scans,
+                      JVM profiling, and runner diagnostics to investigate
+                      performance and memory pressure.
+                    </li>
+                    <li>
+                      Contributed shared-cache migration fixes and cacheable
+                      configuration code generation.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Delivered: targeted plugins and cache fixes. Broader
+                    runner-baseline work remains experimental.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="work-card" data-category="mobile">
+            <div class="work-visual visual-mobile" aria-hidden="true">
+              <div class="visual-meta">
+                <span>03 — MOBILE PRODUCT</span><span>UPSTOX</span>
+              </div>
+              <div class="trading-art">
+                <div class="trading-copy">
+                  Real-time.<br /><em>Human first.</em>
+                </div>
+                <svg viewBox="0 0 230 130">
+                  <path
+                    d="M0 110H230M0 65H230M0 20H230"
+                    stroke="currentColor"
+                    opacity=".15"
+                  />
+                  <path
+                    d="m0 108 23-13 18 8 24-40 18 13 22-29 22 14 20-35 24 12 22-22 16 7 21-19"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle cx="230" cy="4" r="4" fill="currentColor" />
+                </svg>
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> Conceptual illustration · No
+                market data
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">Android · Kotlin · Trading experiences</p>
+              <h3>Complex markets. Considered interfaces.</h3>
+              <p>
+                Real-time market data, expressive UI components, and end-to-end
+                order flows built in collaboration with product, design, and
+                backend teams.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <ul>
+                    <li>
+                      Developed the mobile tick-by-tick engine and reusable TBT
+                      V2 ruler, progress, and multi-state order-status
+                      components.
+                    </li>
+                    <li>
+                      Led Basket Orders development across entry, edit, clone,
+                      and deletion, including payload-driven Sensibull
+                      integration.
+                    </li>
+                    <li>
+                      Delivered Smart Orders and modularized GTT flows,
+                      including single-leg orders and square-off from positions
+                      and holdings.
+                    </li>
+                    <li>
+                      Unified Price and MTM alerts, added trigger-time
+                      visibility, and contributed to watchlist and market-data
+                      improvements.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Product work across my Software Development Engineer I and
+                    II roles at Upstox.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="work-card" data-category="platform">
+            <div class="work-visual visual-lifecycle" aria-hidden="true">
+              <div class="visual-meta">
+                <span>04 — PLATFORM SERVICES</span><span>PHONEPE</span>
+              </div>
+              <div class="lifecycle-art">
+                <span>Discover</span><i>↗</i><span>Evaluate</span><i>↘</i
+                ><span class="lifecycle-last">Act safely</span>
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> Policy-led. Observable.
+                Extendable.
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">Backend · Automation · Reliability</p>
+              <h3>Give infrastructure a lifecycle.</h3>
+              <p>
+                A live, extensible GitLab storage lifecycle manager, alongside
+                service engineering for controlled credential access and release
+                automation.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <ul>
+                    <li>
+                      Developed and operationalized storage lifecycle tooling
+                      with scoped retention policies, report-first evaluation,
+                      size limits, and candidate revalidation.
+                    </li>
+                    <li>
+                      Designed the lifecycle manager to support additional
+                      cleanup use cases without rebuilding its core workflow.
+                    </li>
+                    <li>
+                      Built a modular Java credential-brokering service with
+                      authorization, caching, auditability, automated tests, and
+                      release tooling.
+                    </li>
+                    <li>
+                      Contributed backend platform upgrades and
+                      container-publishing workflows.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Live: storage lifecycle manager. Core credential service and
+                    release tooling implemented; shared CI integration is
+                    ongoing.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="work-card" data-category="platform experiments">
+            <div class="work-visual visual-intelligence" aria-hidden="true">
+              <div class="visual-meta">
+                <span>05 — BUILD INTELLIGENCE</span><span>PHONEPE</span>
+              </div>
+              <div class="intelligence-art">
+                <div class="signal-lines">
+                  <span></span><span></span><span></span><span></span
+                  ><span></span>
+                </div>
+                <span class="signal-arrow">→</span>
+                <div class="signal-result">
+                  Evidence,<br /><em>not guesswork.</em>
+                </div>
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> Observe → Understand →
+                Investigate
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">Observability · Python · MCP</p>
+              <h3>Turn build data into answers.</h3>
+              <p>
+                Reusable performance reporting, flaky-test visibility, and
+                AI-accessible build investigation tools grounded in actual
+                execution data.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <ul>
+                    <li>
+                      Built Develocity reporting workflows for build
+                      comparisons, cache behavior, and module-level test
+                      execution metrics.
+                    </li>
+                    <li>
+                      Improved correlation between CI pipelines, builds, and
+                      runner diagnostics; investigated test-worker memory and
+                      execution bottlenecks.
+                    </li>
+                    <li>
+                      Delivered scheduled flaky-test reports to make recurring
+                      reliability issues visible.
+                    </li>
+                    <li>
+                      Built a working MCP toolset for querying build, failure,
+                      and test information; explored pipeline-regression and
+                      bottleneck analysis tools.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Delivered: reporting workflows. MCP tooling is a working
+                    implementation with broader integration in progress.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="work-card" data-category="experiments mobile">
+            <div class="work-visual visual-lab" aria-hidden="true">
+              <div class="visual-meta">
+                <span>06 — ENGINEERING EXPLORATIONS</span><span>PHONEPE</span>
+              </div>
+              <div class="lab-art">
+                <span class="lab-bracket">{</span>
+                <div>
+                  <span>Ask a better question.</span><em>Build the proof.</em>
+                </div>
+                <span class="lab-bracket">}</span>
+              </div>
+              <div class="visual-foot">
+                <span class="mini-dot"></span> Hypothesis → Prototype →
+                Validation
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-kicker">JUnit 5 · Typed configuration · KMP</p>
+              <h3>Explore before scaling.</h3>
+              <p>
+                Focused proofs of concept for test execution and pipeline
+                configuration, plus shared mobile-platform contributions.
+              </p>
+              <details class="work-detail">
+                <summary>
+                  Explore the work <span aria-hidden="true">+</span>
+                </summary>
+                <div class="detail-body">
+                  <ul>
+                    <li>
+                      Built a JUnit 5 proof of concept with worker queues,
+                      discovery batching, JUnit 4/Vintage interoperability,
+                      sharding, timelines, and coverage aggregation.
+                    </li>
+                    <li>
+                      Explored typed CI configuration, API-driven change
+                      detection, and predictive test selection.
+                    </li>
+                    <li>
+                      Prepared a large-artifact transfer benchmark workflow to
+                      evaluate storage options.
+                    </li>
+                    <li>
+                      Contributed Kotlin Multiplatform localization contracts,
+                      an Android adapter, initialization behavior, and runtime
+                      reliability fixes.
+                    </li>
+                  </ul>
+                  <p class="delivery-note">
+                    Prototypes: JUnit 5, typed CI, predictive selection, and
+                    transfer benchmarking. Production rollout is not
+                    established. Shared KMP contributions were merged.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+        <p class="section-note">
+          Professional work is described at a high level. Company source code
+          and internal documentation stay private.
+        </p>
+      </section>
+
+      <section
+        class="experience-section section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="shell experience-layout">
+          <div class="experience-intro reveal">
+            <p class="eyebrow">02 / The journey</p>
+            <h2 id="experience-title">
+              A wider lens.<br /><em>A deeper craft.</em>
+            </h2>
+            <p>
+              From data and mobile applications to the platforms that help other
+              engineers build.
+            </p>
+            <a class="text-link" href="resume.html"
+              >The resume version <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="timeline">
+            <article class="role role-current">
+              <div class="role-top">
+                <h3>PhonePe</h3>
+                <span class="current-badge">Current</span>
+              </div>
+              <p class="role-title">Software Development Engineer · L4</p>
+              <p class="role-date">Sep 2025 — Present · App Platform</p>
+              <p>
+                Building developer infrastructure across Android build systems,
+                CI/CD, test automation, backend services, and observability.
+              </p>
+              <ul>
+                <li>
+                  Delivered reusable Gradle tooling, cache-correctness fixes,
+                  and configuration-cache compatibility and persistence.
+                </li>
+                <li>
+                  Developed targeted presubmit feedback, quality integrations,
+                  test sharding, and pipeline guardrails.
+                </li>
+                <li>
+                  Built a live storage lifecycle manager, a credential-brokering
+                  service, and evidence-led build reporting.
+                </li>
+                <li>
+                  Explored JUnit 5 execution and AI-assisted build investigation
+                  while contributing to shared mobile-platform reliability.
+                </li>
+              </ul>
+              <div class="tags">
+                <span>Gradle</span><span>Kotlin</span><span>Java</span
+                ><span>Python</span><span>GitLab CI</span>
+              </div>
+            </article>
+            <article class="role">
+              <div class="role-top">
+                <h3>Upstox</h3>
+                <span class="role-period">2022 — 2025</span>
+              </div>
+              <p class="role-title">Software Development Engineer II</p>
+              <p class="role-date">Apr 2024 — Sep 2025</p>
+              <p>
+                Owned and developed Android trading experiences, connecting
+                real-time data, reusable UI, and complex order workflows.
+              </p>
+              <ul>
+                <li>
+                  Built tick-by-tick experiences and reusable animated
+                  components for TBT V2.
+                </li>
+                <li>
+                  Led Basket Orders and Sensibull integration; delivered Smart
+                  Orders, modular GTT flows, and MTM alerts.
+                </li>
+              </ul>
+              <div class="role-progression">
+                <p class="role-title">Software Development Engineer I</p>
+                <p class="role-date">Jul 2022 — Mar 2024</p>
+                <p>
+                  Contributed to the app 4.0 accounts migration, Funds and
+                  Settlements, segment activation, watchlist performance, and
+                  the market-data v1-to-v2 transition. Implemented GTT
+                  triggering and resolved production issues across holdings,
+                  orders, and positions.
+                </p>
+              </div>
+              <div class="role-progression">
+                <p class="role-title">Software Development Engineer Intern</p>
+                <p class="role-date">Mar 2022 — Jul 2022</p>
+                <p>
+                  Started with the mobile team, developing Android features in
+                  Kotlin.
+                </p>
+              </div>
+              <div class="tags">
+                <span>Android</span><span>Kotlin</span
+                ><span>Real-time data</span><span>Product engineering</span>
+              </div>
+            </article>
+            <article class="role early-career">
+              <h3>Where it started</h3>
+              <details>
+                <summary>
+                  Data, research &amp; cloud foundations
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <div class="early-roles">
+                  <div>
+                    <h4>Chubb <span>Software Engineer Intern</span></h4>
+                    <p class="role-date">Sep 2021 — Mar 2022</p>
+                    <p>
+                      Developed Informatica Cloud ETL pipelines and optimized
+                      SQL queries with the data team.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>HighRadius <span>Data Analyst Intern</span></h4>
+                    <p class="role-date">Jun 2021 — Sep 2021</p>
+                    <p>
+                      Worked on MySQL query performance and frontend reporting
+                      dashboards with Highcharts.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>NIT Raipur <span>Research Intern</span></h4>
+                    <p class="role-date">Mar 2021 — Jul 2021</p>
+                    <p>
+                      Explored deep learning for weather forecasting with
+                      TensorFlow and Keras under Prof. Naresh Nagwani.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>
+                      IIT Kharagpur <span>Azure Cloud Computing Trainee</span>
+                    </h4>
+                    <p class="role-date">Apr 2020 — May 2020</p>
+                    <p>
+                      Completed Microsoft Azure cloud-computing training and a
+                      virtual-machine provisioning project.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section shell projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">03 / Independently built</p>
+            <h2 id="projects-title">Curiosity,<br /><em>put into code.</em></h2>
+          </div>
+          <p class="section-description">
+            A few earlier projects across mobile, web, data, and cloud. Small
+            ideas that became working software.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="personal-project">
+            <p class="project-index">01 / Android</p>
+            <h3>
+              <a
+                href="https://github.com/goyalvishrut/Foopie"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Foopie <span aria-hidden="true">↗</span
+                ><span class="sr-only"> on GitHub (opens in a new tab)</span></a
+              >
+            </h3>
+            <p>
+              A recipe-discovery app with preference filters, saved favorites,
+              and local persistence.
+            </p>
+            <p class="project-stack">Kotlin · Retrofit · Room · Coroutines</p>
+          </article>
+          <article class="personal-project">
+            <p class="project-index">02 / Real-time chat</p>
+            <h3>
+              <a
+                href="https://github.com/goyalvishrut/Pro-Chat"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Pro Chat <span aria-hidden="true">↗</span
+                ><span class="sr-only"> on GitHub (opens in a new tab)</span></a
+              >
+            </h3>
+            <p>
+              An Android messaging app with authentication, message delivery,
+              unsending, and account management.
+            </p>
+            <p class="project-stack">Kotlin · Firebase · Android</p>
+          </article>
+          <article class="personal-project">
+            <p class="project-index">03 / Full-stack web</p>
+            <h3>
+              <a
+                href="https://github.com/goyalvishrut/Happy-Blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Happy Blog <span aria-hidden="true">↗</span
+                ><span class="sr-only"> on GitHub (opens in a new tab)</span></a
+              >
+            </h3>
+            <p>
+              A full-stack blogging application with persistent storage and a
+              simple interface for creating and deleting posts.
+            </p>
+            <p class="project-stack">Python · Flask · MySQL · HTML/CSS</p>
+          </article>
+          <article class="personal-project">
+            <p class="project-index">04 / Data visualization</p>
+            <h3>
+              <a
+                href="https://goyalvishrut-ancesters.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ancesters <span aria-hidden="true">↗</span
+                ><span class="sr-only"> demo (opens in a new tab)</span></a
+              >
+            </h3>
+            <p>
+              An interactive family-tree explorer for navigating relatives,
+              ancestors, and relationships.
+            </p>
+            <p class="project-stack">Python · Streamlit · Data structures</p>
+          </article>
+          <article class="personal-project">
+            <p class="project-index">05 / Applied machine learning</p>
+            <h3>
+              <a
+                href="https://github.com/goyalvishrut/Payment-Date-Prediction-Highradius"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Payment Date Prediction <span aria-hidden="true">↗</span
+                ><span class="sr-only"> on GitHub (opens in a new tab)</span></a
+              >
+            </h3>
+            <p>
+              A receivables-focused project combining payment-date prediction
+              models with a web interface.
+            </p>
+            <p class="project-stack">Python · React · SVM · Random Forest</p>
+          </article>
+          <article class="personal-project">
+            <p class="project-index">06 / Cloud foundations</p>
+            <h3>
+              <a
+                href="https://drive.google.com/drive/folders/1mUVDeEqRdIYoCgYt5avZio-E65r7CW5r"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Azure Cloud Project <span aria-hidden="true">↗</span
+                ><span class="sr-only">
+                  project files (opens in a new tab)</span
+                ></a
+              >
+            </h3>
+            <p>
+              A hands-on exploration of cloud infrastructure through
+              virtual-machine provisioning on Microsoft Azure.
+            </p>
+            <p class="project-stack">Microsoft Azure · Virtual machines</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="about-section section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="shell about-layout">
+          <div class="portrait-wrap reveal">
+            <img
+              src="static/assets/img/profile-img.jpg"
+              width="3336"
+              height="3336"
+              loading="lazy"
+              decoding="async"
+              alt="Vishrut Goyal, smiling"
+            />
+            <div class="portrait-caption">
+              <span>Vishrut Goyal</span><span>Engineer. Always learning.</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">04 / A little about me</p>
+            <h2 id="about-title">
+              The whole system<br /><em>is the interesting part.</em>
+            </h2>
+            <p class="about-lead">
+              I like understanding how the pieces fit together—from the
+              interaction on a screen to the build that makes it possible.
+            </p>
+            <p>
+              My work has moved from data pipelines and Android products to
+              developer infrastructure. That range shapes how I approach
+              engineering: start with the person using it, follow the evidence,
+              and leave the system easier to work with.
+            </p>
+            <div class="education" id="education">
+              <p class="eyebrow">Education</p>
+              <h3>Bachelor of Technology</h3>
+              <p>
+                Kalinga Institute of Industrial Technology<br /><span
+                  >2018 — 2022 · CGPA 8.92 / 10</span
+                >
+              </p>
+              <details>
+                <summary>
+                  Earlier education <span aria-hidden="true">+</span>
+                </summary>
+                <div class="education-details">
+                  <p>
+                    <strong>Mothers Pride Higher Secondary School</strong
+                    ><br />2016 — 2018 · 77%
+                  </p>
+                  <p>
+                    <strong>New Era High School, Panchgani</strong><br />2014 —
+                    2016 · CGPA 10 / 10
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div class="shell toolkit" id="skills">
+          <div class="toolkit-heading">
+            <p class="eyebrow">The toolkit</p>
+            <p>Tools change.<br />Engineering principles travel.</p>
+          </div>
+          <div class="toolkit-group">
+            <h3>Products &amp; mobile</h3>
+            <p>
+              Kotlin · Android · Java<br />Coroutines · Room · Retrofit<br />Firebase
+              · Kotlin Multiplatform
+            </p>
+          </div>
+          <div class="toolkit-group">
+            <h3>Platforms &amp; reliability</h3>
+            <p>
+              Gradle · GitLab CI · Docker<br />Develocity · JUnit · JaCoCo<br />SonarQube
+              · JVM diagnostics
+            </p>
+          </div>
+          <div class="toolkit-group">
+            <h3>Services &amp; data</h3>
+            <p>
+              Python · Flask · Dropwizard<br />SQL · MySQL · MCP<br />Azure ·
+              Informatica · TensorFlow
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-section section shell"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div>
+          <p class="eyebrow">05 / Keep in touch</p>
+          <h2 id="contact-title">
+            Good work starts<br />with a <em>conversation.</em>
+          </h2>
+          <p>
+            Building something interesting, untangling a hard problem,<br
+              class="desktop-break"
+            />
+            or just comparing notes? I’d love to hear from you.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:goyalvishrut@gmail.com"
+            >Say hello <span aria-hidden="true">↗</span></a
+          ><a class="email-address" href="mailto:goyalvishrut@gmail.com"
+            >goyalvishrut@gmail.com</a
+          >
+          <div class="social-links">
+            <a
+              href="https://github.com/goyalvishrut"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            ><a
+              href="https://www.linkedin.com/in/goyalvishrut/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            ><a
+              href="https://leetcode.com/u/goyalvishrut/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LeetCode <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer shell">
+      <a class="footer-brand" href="#top">vg.</a>
       <p>
-        I'm
-        <span class="typed" data-typed-items="Software Developer, Data Analyst"></span>
+        © <span data-year>2026</span> Vishrut Goyal
+        <span class="footer-divider">/</span> Built with care, at every layer.
       </p>
-    </div>
-  </section>
-  <main id="main">
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-in">
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h4>
-              <p><b>Hey there!</b></p>
-              <p>
-                My name is Vishrut Goyal. I'm a passionate software
-                development professional focused on creating impactful
-                solutions through innovation and problem-solving.
-              </p>
-              <p>
-                I specialize in Android and backend development, combining
-                technical expertise with creative thinking to build
-                user-focused applications that deliver exceptional results.
-              </p>
-              <p>
-                My experience includes designing scalable systems and staying
-                current with emerging technologies. I thrive in collaborative
-                environments, working with teams to solve complex challenges.
-              </p>
-              <p>
-                I'm always open to connecting with fellow professionals,
-                exploring new opportunities, and sharing ideas. Let's connect
-                and build something great together!
-              </p>
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience" class="resume section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Professional Experience</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="resume-item">
-              <h4>SOFTWARE DEVELOPMENT ENGINEER (L4)</h4>
-              <h5>Sep 2025 – Present</h5>
-              <p><em>PhonePe</em></p>
-              <ul>
-                <li>
-                  Contributing to App Platform team by optimizing app build time, CI/CD pipeline, sdk infra,
-                  Performance, Dev Tools and
-                  Test automation
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>SOFTWARE DEVELOPMENT ENGINEER II</h4>
-              <h5>April 2024 – Sep 2025</h5>
-              <p><em>Upstox</em></p>
-              <ul>
-                <li>
-                  Pioneered India's first <b>TBT (Tick-by-Tick) Engine</b> for
-                  mobile, delivering real-time stock market data with complex
-                  animations, ensuring a high-performance, user-centric
-                  experience with zero side effects and no blockers.
-                </li>
-                <li>
-                  Designed innovative, reusable UI components for
-                  <b>TBT V2</b> including a versatile ruler card with
-                  segmented/continuous progress bars and a multi-state order
-                  status card, delivering a high-performance, scalable
-                  solution with zero side effects despite complex animation
-                  challenges.
-                </li>
-                <li>
-                  <b>Led</b> the development of the
-                  <b>Basket Orders</b> module, collaborating with
-                  cross-functional teams to design intuitive APIs and UI,
-                  delivering scalable features like Basket Order Entry, Edit,
-                  Clone, and Delete with zero side effects for enhanced user
-                  engagement.
-                </li>
-                <li>
-                  Architected and delivered the <b>Smart Orders</b> feature
-                  end-to-end, driving high user impact with seamless order
-                  triggering, built on robust, scalable code with zero
-                  critical defects and no blockers.
-                </li>
-                <li>
-                  Integrated <b>Sensibull</b> into Basket Orders, creating a
-                  dynamic, payload-driven linking system that optimized
-                  workflows, ensuring a high-impact solution with no blockers,
-                  delivered within aggressive timelines.
-                </li>
-                <li>
-                  Refactored the <b>GTT (GOOD TILL TRIGGER)</b> module into a
-                  modular, scalable framework, enabling single-leg orders and
-                  square-off capabilities from Positions and Holdings, with
-                  decoupled code designed for future expansion, zero side
-                  effects, and real-time feed integration.
-                </li>
-                <li>
-                  Engineered the <b>MTM Alerts</b> ecosystem, unifying Price
-                  and MTM Alerts under the Account section with a streamlined,
-                  user-focused design, enhanced in new phase with alert
-                  trigger time visibility for greater transparency and impact,
-                  achieving no blockers in deployment.
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>SOFTWARE DEVELOPMENT ENGINEER I</h4>
-              <h5>JULY 2022 – MARCH 2024</h5>
-              <p><em>UPSTOX</em></p>
-              <ul>
-                <li>
-                  Contributed to the <b>Migration</b> project, delivering a
-                  robust accounts module revamp for the 4.0 app, ensuring
-                  seamless transitions and high user impact through meticulous
-                  bug fixes across watchlists, scrip details, and other
-                  modules.
-                </li>
-                <li>
-                  Spearheaded <b>Segment Activation</b> end-to-end for the
-                  scrip details page, creating an optimized, scalable flow
-                  that enhanced user accessibility and experience.
-                </li>
-                <li>
-                  Optimized the <b>Watchlist</b> for improved performance and
-                  collaborated on the
-                  <b>Market Data Revamp (v1 to v2)</b> driving scalable
-                  infrastructure upgrades with measurable efficiency gains.
-                </li>
-                <li>
-                  Led the <b>Funds and Settlements </b> project, revamping the
-                  accounts module with a robust, scalable design, ensuring
-                  timely delivery with zero critical issues.
-                </li>
-                <li>
-                  Single-handedly implemented
-                  <b>GTT Smart Order Triggering</b> in the app, coordinating
-                  with Product, Backend, and Design teams to deliver a
-                  high-impact, end-to-end feature that elevated order
-                  execution reliability.
-                </li>
-                <li>
-                  Proactively resolved production issues and performed bug
-                  fixes across critical modules (e.g., holdings, orders,
-                  positions), ensuring a seamless, optimized user experience
-                  with minimal downtime.
-                </li>
-                <li>
-                  Improved code quality by removing unused code and enhancing
-                  readability, laying the foundation for a maintainable,
-                  future-proof codebase that streamlined team workflows.
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>
-                SOFTWARE DEVELOPMENT ENGINEER INTERN
-                <a href="https://drive.google.com/file/d/1tyaOKItqCpsB0lLHcy00UE3PwRLWsDt0/view?usp=sharing"
-                  target="_blank">(Certificate)</a>
-              </h4>
-              <h5>March 2022 – July 2022</h5>
-              <p><em>Upstox</em></p>
-              <ul>
-                <li>Worked with mobile team.</li>
-                <li>
-                  Worked with kotlin and android studio on android
-                  development.
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>SOFTWARE ENGINEER INTERN</h4>
-              <h5>SEP 2021 – MARCH 2022</h5>
-              <p><em>Chubb</em></p>
-              <ul>
-                <li>
-                  Worked with data team on developing ETL pipelines using
-                  Informatica cloud.
-                </li>
-                <li>Worked with SQL database to optimize SQL queries.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>
-                DATA ANALYST INTERN
-                <a href="https://drive.google.com/file/d/1XNzVruPBZNByh87eReoq_aAJqwn1aHWN/view?usp=sharing"
-                  target="_blank">(Certificate)</a>
-              </h4>
-              <h5>JUN 2021 – SEP 2021</h5>
-              <p><em>HighRadius</em></p>
-              <ul>
-                <li>Worked with MYSQL Database, HighCharts.</li>
-                <li>
-                  Improved the query performance and worked with frontend
-                  dashboard using Highcharts
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>
-                RESEARCH INTERNSHIP
-                <a href="https://drive.google.com/file/d/1M_UbyKQXB2PmUd4gzbLUGZQXvTf6Sl9B/view?usp=sharing"
-                  target="_blank">(Certificate)</a>
-              </h4>
-              <h5>March 2021 – July 2021</h5>
-              <p><em>NIT Raipur</em></p>
-              <ul>
-                <li>
-                  Worked on deep learning technology for weather forecasting.
-                </li>
-                <li>
-                  Used tensorflow and keras under a professor Naresh Nagwani
-                  from NIT RAIPUR.
-                </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>TRAINEE</h4>
-              <h5>April 2020 – May 2020</h5>
-              <p><em>IIT Kharagpur</em></p>
-              <ul>
-                <li>
-                  Successfully completed my internship program on "Microsoft
-                  Azure Cloud Computing".
-                </li>
-                <li>
-                  Used tensorflow and keras under a professor Naresh Nagwani
-                  from NIT Raipur.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="education" class="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Education</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-            <div class="resume-item">
-              <h4>B.TECH</h4>
-              <h5>2018 - 2022</h5>
-              <p><em>Kalinga Institute of Industial Technology</em></p>
-              <p>CGPA 8.92/10</p>
-            </div>
-            <div class="resume-item">
-              <h4>Senior Secondary</h4>
-              <h5>2016 - 2018</h5>
-              <p><em>Mothers Pride Hr. Sech School</em></p>
-              <p>Percentage 77/100</p>
-            </div>
-            <div class="resume-item">
-              <h4>Higher Secondary</h4>
-              <h5>2014 - 2016</h5>
-              <p><em>New Era High School, Panchgani</em></p>
-              <p>CGPA 10/10</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="facts">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-        </div>
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-          <div class="resume-item">
-            <h4>
-              Happy Blog ||
-              <a href="https://github.com/goyalvishrut/Happy-Blog" target="_blank"><u>LINK</u></a>
-            </h4>
-            <p><em>Python, Flask, SQL, HTML, VS-CODE</em></p>
-            <ul>
-              <li>
-                Created a full-stack working website using Flask as the
-                backend and HTML/CSS as the frontend. It includes many
-                impressive features.
-              </li>
-              <li>
-                It uses MySQL database for data storage and includes features
-                such as adding and deleting blogs from the UI.
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>
-              Foopie ||
-              <a href="https://github.com/goyalvishrut/Foopie" target="_blank"><u>LINK</u></a>
-            </h4>
-            <p>
-              <em>Kotlin, Room Database, Retrofit, Navigation, Android
-                Studio</em>
-            </p>
-            <ul>
-              <li>
-                Created an app that retrieves different types of food recipes
-                from an API.
-              </li>
-              <li>
-                It includes features like saving recipes to a favorites
-                section and filtering based on various preferences such as
-                type and nutrients.
-              </li>
-              <li>
-                It utilizes Retrofit, Navigation Component, Room Database,
-                Coroutines, and many other essential features of Android
-                applications.
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>
-              Pro Chat ||
-              <a href="https://github.com/goyalvishrut/Pro-Chat" target="_blank"><u>LINK</u></a>
-            </h4>
-            <p><em>Kotlin, Google Firebase, Android Studio</em></p>
-            <ul>
-              <li>
-                Created an Android application using Kotlin and Android Studio
-                that enables sending, receiving, and deleting messages.
-              </li>
-              <li>
-                It requires signup and authentication is handled through
-                Google Firebase. It includes features like account deletion
-                and message unsending.
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>
-              Ancesters ||
-              <a href="https://goyalvishrut-ancesters.streamlit.app/" target="_blank"><u>DEPLOYED LINK</u></a>
-            </h4>
-            <p>
-              <em>Python, Object Oriented, Data Structure , Streamlit</em>
-            </p>
-            <ul>
-              <li>Created a site where you can visualize family trees.</li>
-              <li>
-                It includes features for filtering person data based on
-                conditions like family, cousins, ancestors, successors, etc.
-              </li>
-              <li>
-                It implements a login method to keep data secure and private,
-                ensuring only authorized users can view the details.
-              </li>
-              <li>Username - Viewer, Password - view</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>
-              Full Stack Web Based Product ||
-              <a href="https://github.com/goyalvishrut/Payment-Date-Prediction-Highradius"
-                target="_blank"><u>LINK</u></a>
-            </h4>
-            <p>
-              <em>Machine Learning, Python, React, VsCode, Jupyter Notebook</em>
-            </p>
-            <ul>
-              <li>
-                Created a full-stack web-based product using Machine Learning
-                and React JS.
-              </li>
-              <li>
-                It takes various columns as input and predicts the approximate
-                date when the client's payment will be cleared.
-              </li>
-              <li>
-                It has been tested with various Machine Learning Models
-                including SVM and Random Forest.
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>
-              Azure CLOUD COMPUTING Major Project ||
-              <a href="https://drive.google.com/drive/folders/1mUVDeEqRdIYoCgYt5avZio-E65r7CW5r"
-                target="_blank"><u>LINK</u></a>
-              ||
-              <a href="https://drive.google.com/file/d/1Hq-IwZrXtnpvzSNiHNE851mTXej3g_Ox/view"
-                target="_blank"><u>CERTIFICAATE</u></a>
-            </h4>
-            <p><em>Azure Cloud Computing</em></p>
-            <ul>
-              <li>
-                Worked with Microsoft Azure and created virtual machines using
-                various Azure features, demonstrating proficiency in cloud
-                computing.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Programming Languages</h4>
-            <ul>
-              <li><b>Python</b></li>
-              <li><b>Kotlin</b></li>
-              <li><b>HTML/CSS</b></li>
-              <li><b>SQL</b></li>
-              <li><b>Java</b></li>
-              <li><b>Go</b></li>
-            </ul>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Frameworks/Technologies</h4>
-            <ul>
-              <li><b>Android Studio</b></li>
-              <li><b>Flask</b></li>
-              <li><b>Tensorflow</b></li>
-              <li><b>Git</b></li>
-              <li><b>Informatica</b></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <script src="static/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="static/assets/vendor/aos/aos.js"></script>
-  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/assets/vendor/typed.js/typed.min.js"></script>
-  <script src="static/assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="static/assets/vendor/php-email-form/validate.js"></script>
-
-  <script src="static/assets/js/main.js"></script>
-</body>
-
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
 </html>
